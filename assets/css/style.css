@@ -3,6 +3,8 @@ body{
   font-family: sans-serif;
 }
 
+
+
 /*grid layout for everything*/
 .container {  
   display: grid;
@@ -24,6 +26,8 @@ body{
     height: auto;
     background-color: white;
 }
+
+
 
 /*Where the logo is placed*/
 .logo { 
@@ -99,6 +103,8 @@ body{
 
 }
 
+
+
 /*Thing where to put the button for Home, New, Sale & just overall other links that dont fit on the page itself*/
 .additional-info { 
   grid-area: additional-info; 
@@ -129,6 +135,8 @@ padding: 1%;
   cursor: pointer;
 
 }
+
+
 
 /*The thing where the filters are displayed inside*/
 .Filter { 
@@ -258,6 +266,8 @@ padding: 1%;
   background-color: rgb(235, 235, 235);
   cursor: pointer;
 }
+
+
 
 /*
 The star of the show, the products. 
@@ -395,6 +405,8 @@ Where everything is sorted into a grid just like the .container class
   cursor: pointer;
 }
 
+
+
 /*The footer/The end thing. This is where the copyright thing, about, and where to seek for help information is placed.*/
 .disclaimer { 
   grid-area: disclaimer; 
@@ -432,6 +444,7 @@ Where everything is sorted into a grid just like the .container class
   width: 30%;
   border-radius: 15px;
 }
+
 
 /*For responsiveness*/
 @media only screen and (max-width: 745px){
