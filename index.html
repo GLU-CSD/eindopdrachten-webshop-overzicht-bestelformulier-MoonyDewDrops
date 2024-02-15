@@ -21,16 +21,20 @@
 
 <body>
 
+  <!--Container that contains everything-->
   <div class="container">
 
+    <!--Where the logo should be placed-->
     <div class="logo">
       logo
     </div>
 
+    <!--Search balk-->
     <div class="search">
       <input type="text" placeholder="Search..?">
     </div>
 
+    <!--Thing with the account, cart & favourite button-->
     <div class="addons">
 
       <button type="button">
@@ -51,12 +55,14 @@
 
     </div>
 
+    <!--where things like home, new & sale r placed-->
     <div class="additional-info">
       <button type="button">Home</button>
       <button type="button">New</button>
-      <button type="button">Popular</button>
+      <button type="button">Sale</button>
     </div>
 
+    <!--the thing that filters everything-->
     <div class="Filter">
 
       <div id="itemsFound">
@@ -66,6 +72,7 @@
       <div id="sortBy">
       <P>Sort by:</P>
 
+      <!--the selector for how you want to view products-->
       <form>
         <select style="text-align: center;">
 
@@ -81,6 +88,7 @@
       </form>    
       <br>    
       </div>
+      <!--checkbox for what game you wanna display w the products-->
       <div id="gameFilter">
         <p>Type:</p>
         <form>      
@@ -96,6 +104,7 @@
         <br> 
       </form>
       </div>
+      <!--slider for price-->
       <div id="price">
         <p>Price</p>
 
@@ -106,14 +115,18 @@
         </div>
       </div>
 
+      <!--What you click when you actually want to filter the items-->
       <div id="submitFilter">
         <button type="submit">Filter?</button>
       </div>
 
     </div>
 
+    <!--Thing where products r inside-->
     <div class="products">
 
+      <!--the start of the products. Has the cover image of the song, n height&width inside it. 
+      Inside here r the image, name, price & add to cart button-->
       <div id="product1" class="product-item">
         <img src="https://i.scdn.co/image/ab67616d0000b27337f7b15671c5778cf0a24408" alt="Stone Cold Killer - Dusttale Original" 
         style="width: 100%; height: auto">
@@ -290,6 +303,7 @@
       </div>
       
 
+      <!--The next page box that already works but just need to see if i rlly need it in the end. Otherwise remove this later-->
       <div id="nextPage" class="skip">
         <p><a href="http://127.0.0.1:5500/">1</a>, <a href="http://127.0.0.1:5500/">2</a>, 3, 4 ... 10</p>
 
@@ -298,7 +312,7 @@
 
     </div>
 
-    
+    <!--the footer witht he copyright info, the about SharaX & Where to go for help-->
     <div class="disclaimer">
       <div id="about">
         <p>About SharaX</p>
@@ -322,6 +336,7 @@
 
   </div>
 
+  <!--Thing that links the javascript to this document-->
   <script src="assets/js/app.js"></script>
 
 </body>
