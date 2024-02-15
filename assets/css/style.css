@@ -7,12 +7,13 @@ body{
 .container {  
   display: grid;
   grid-template-columns: 1fr 0.5fr 1fr 1fr 1fr;
-  grid-template-rows: 0.125fr 0.20fr 2fr 1fr 0.5fr;
+  grid-template-rows: 0.05fr 0.125fr 2fr 1fr 0.25fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
     "logo logo search search addons"
     "additional-info additional-info additional-info additional-info additional-info"
+    "Filter products products products products"
     "Filter products products products products"
     "Filter products products products products"
     "disclaimer disclaimer disclaimer disclaimer disclaimer";
@@ -28,12 +29,12 @@ body{
 @media only screen and (max-width: 745px){
   .container{
     grid-template-columns: 0.5fr 1fr 1fr;
-    grid-template-rows: 0.05fr 0.07fr 0.2fr 0.25fr 0.25fr 0.25fr 0.3fr 0.2fr;
+    grid-template-rows: 0.04fr 0.06fr 0.15fr 0.25fr 0.25fr 0.25fr 0.25fr 0.01fr 0.15fr;
     grid-template-areas:
     "logo search addons"
     "additional-info additional-info additional-info"
     "Filter Filter Filter"
-    "Filter Filter Filter"
+    "products products products"
     "products products products"
     "products products products"
     "products products products"
@@ -41,7 +42,10 @@ body{
     "disclaimer disclaimer disclaimer";
   }
 
-
+  .Filter{
+    background-color: red;
+    overflow-y:scroll;
+  }
   /*.Filter{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -77,7 +81,7 @@ body{
   border-top: 2px solid #13293D;
   border-bottom: 2px solid #13293D;
   position: sticky;
-  top: 0.1px;
+  top: 0.3px;
   background-color: #6495ED;
   color: #13293D;
 }
@@ -88,13 +92,13 @@ body{
   border-top: 2px solid #13293D;
   border-bottom: 2px solid #13293D;
   position: sticky;
-  top: 0.1px;
+  top: 0.3px;
 }
 
 /*actual thing that searches*/
 .search input[type="text"]{
   font-size: 20px;
-  height: 96%;
+  height: 97%;
   width: 100%;
   background-color: #6495ED;
   color: #13293D;
@@ -111,7 +115,7 @@ body{
 
     /*style*/
     position: sticky;
-    top: 0.1px;
+    top: 0.3px;
     background-color: #6495ED;
     color: #13293D;
     border-top: 2px solid #13293D;
@@ -125,8 +129,9 @@ body{
   background-color: #6495ED;
   border-radius: 15px;
   color: #13293D;
-  height: 100%;
-  width: 33.33%;
+  height: 95%;
+  width: 30%;
+  font-size: 12px;
 }
 
 .addons button:hover{
@@ -181,7 +186,7 @@ padding: 1%;
     padding: 5%;
     
     grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.05fr 2fr;
+    grid-template-rows: 0.05fr 0.075fr 0.1fr 0.1fr 0.05fr 2fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -294,6 +299,9 @@ padding: 1%;
     "product4 product5 product6"
     "product7 product8 product9"
     "product10 product11 product12"
+    "product13 product14 product15"
+    "product16 product17 product18"
+    "product19 product20 product21"
     "nextPage nextPage nextPage";
   grid-area: products;
   height: 100%;
@@ -364,7 +372,40 @@ padding: 1%;
   grid-area: product12; 
 }
 
+#product13 { 
+  grid-area: product13; 
+}
 
+#product14 { 
+  grid-area: product14; 
+}
+
+#product15 { 
+  grid-area: product15; 
+}
+
+#product16 { 
+  grid-area: product16; 
+}
+
+#product17 { 
+  grid-area: product17; 
+}
+#product18 { 
+  grid-area: product18; 
+}
+
+#product19 { 
+  grid-area: product19; 
+}
+
+#product20 { 
+  grid-area: product20; 
+}
+
+#product21{
+  grid-area: product21;
+}
 #nextPage{
   grid-area: nextPage;
   border: 2px solid #6495ED;
