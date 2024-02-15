@@ -14,8 +14,7 @@ body{
     "logo logo search search addons"
     "additional-info additional-info additional-info additional-info additional-info"
     "Filter products products products products"
-    "Filter products products products products"
-    "Filter products products products products"
+    "Filter products products products products"    
     "disclaimer disclaimer disclaimer disclaimer disclaimer";
     width: 80%;
     margin-left: 10%;
@@ -29,12 +28,11 @@ body{
 @media only screen and (max-width: 745px){
   .container{
     grid-template-columns: 0.5fr 1fr 1fr;
-    grid-template-rows: 0.04fr 0.06fr 0.15fr 0.25fr 0.25fr 0.25fr 0.25fr 0.01fr 0.15fr;
+    grid-template-rows: 0.025fr 0.04fr 0.09fr 0.25fr 0.25fr 0.25fr 0.19fr 0.15fr;
     grid-template-areas:
     "logo search addons"
     "additional-info additional-info additional-info"
     "Filter Filter Filter"
-    "products products products"
     "products products products"
     "products products products"
     "products products products"
@@ -68,9 +66,6 @@ body{
 
     }*/
 
-    body{
-      background-color: red;
-    }
 }
 
 .logo { 
@@ -223,6 +218,10 @@ padding: 1%;
   border: none;
   color: #13293D;
   width: 100%;
+}
+
+.Filter select:hover{
+  cursor: pointer;
 }
 
 #gameFilter{
