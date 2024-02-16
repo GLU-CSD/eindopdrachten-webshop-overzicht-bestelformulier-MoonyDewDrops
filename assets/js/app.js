@@ -8,3 +8,20 @@ output.innerHTML = slider.value;
 slider.oninput = function() {
   output.innerHTML = this.value;
 }
+
+//creates counter for cart
+var ItemCounter = 0;
+
+//gets the id of the button
+const counterDiv = document.getElementById("ItemCounter");
+
+//adds the numbers like a pro
+function addProduct(){
+  ItemCounter++;
+  counterDiv.innerHTML = ItemCounter;
+}
+
+//the function to send it to the site
+function link() {
+  window.location.href = "http://127.0.0.1:5500/index.html";
+}
