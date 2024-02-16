@@ -23,5 +23,5 @@ function addProduct(){
 
 //the function to send it to the site
 function link() {
-  window.location.href = "http://127.0.0.1:5500/index.html";
+  window.location.href = "https://u230062.gluwebsite.nl/web/WebshopJulia/";
 }
