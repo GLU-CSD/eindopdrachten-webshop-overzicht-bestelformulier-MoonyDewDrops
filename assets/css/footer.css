@@ -1,0 +1,39 @@
+/*The footer/The end thing. This is where the copyright thing, about, and where to seek for help information is placed.*/
+.disclaimer { 
+    grid-area: disclaimer; 
+  
+      /*style*/
+      border: 2px solid #6495ED;
+      background-color: #98b5eb;
+      color: #13293D;
+      display: flex;
+      gap: 2.5%;
+      padding: 2%;
+  
+  
+  }
+  
+  #about{
+    text-align: center;
+    border: 1px solid #13293D;
+    height: 72.5%;
+    width: 20%;
+    margin-left: 2.5%;
+    border-radius: 15px;
+  }
+  
+  #copyRight{
+    text-align: center;
+    border: 1px solid #13293D;
+    height: 72.5%;
+    width: 20%;
+    border-radius: 15px;
+  }
+  
+  #help{
+    text-align: center;
+    border: 1px solid #13293D;
+    height: 72.5%;
+    width: 20%;
+    border-radius: 15px;
+  }
