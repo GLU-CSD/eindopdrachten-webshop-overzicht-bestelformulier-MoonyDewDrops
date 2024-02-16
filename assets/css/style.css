@@ -97,6 +97,7 @@ body{
   height: 50px;
   width: 50px;
   font-size: 12px;
+
 }
 
 .addons button:hover{
@@ -110,11 +111,9 @@ body{
 .addOnnImg{
   height: 50%;
   width: 50%;
+  
 }
 
-.cart{
-  margin-top: -5%;
-}
 
 /*Thing where to put the button for Home, New, Sale & just overall other links that dont fit on the page itself*/
 .additional-info { 
@@ -508,4 +507,49 @@ Where everything is sorted into a grid just like the .container class
 
     }
 
+}
+
+@media only screen and (max-width: 400px){
+
+  .Filter{
+    gap: 0px 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "itemsFound" 
+      "sortBy"
+      "gameFilter"
+      "price"
+      "submitFilter";
+  } 
+
+  .products{      
+
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "product1"
+      "product2" /*1*/
+      "product3" 
+      "product4"/*2*/
+      "product5" 
+      "product6"/*3*/
+      "product7" 
+      "product8"/*4*/
+      "product9" 
+      "product10"/*5*/
+      "product11" 
+      "product12"/*6*/
+      "product13" 
+      "product14"/*7*/
+      "product15" 
+      "product16"/*8*/
+      "product17" 
+      "product18"/*9*/
+      "product19" 
+      "product20"/*10*/
+      "product21" /*11*/
+      "nextPage";/*12*/
+
+    }
 }
