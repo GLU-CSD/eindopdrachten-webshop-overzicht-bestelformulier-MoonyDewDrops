@@ -473,10 +473,6 @@ Where everything is sorted into a grid just like the .container class
     "products products products"
     "disclaimer disclaimer disclaimer";
   }
-  .add-infoImg{
-    height: 100%;
-    width: 80%;
-  }
 
   .Filter{
     gap: 0px 20px;
