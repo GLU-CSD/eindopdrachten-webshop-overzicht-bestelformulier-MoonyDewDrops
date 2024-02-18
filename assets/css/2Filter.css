@@ -126,3 +126,33 @@
     background-color: rgb(235, 235, 235);
     cursor: pointer;
   }
+
+  @media only screen and (max-width: 745px){
+    .Filter{
+      gap: 0px 20px;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas:
+        "itemsFound itemsFound" 
+        "sortBy gameFilter"
+        "price submitFilter";
+    } 
+
+    #itemsFound{
+      align-self: center;
+    }
+  }
+
+  @media only screen and (max-width: 450px){
+    .Filter{
+      gap: 0px 20px;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-areas:
+        "itemsFound" 
+        "sortBy"
+        "gameFilter"
+        "price"
+        "submitFilter";
+    }  
+  }

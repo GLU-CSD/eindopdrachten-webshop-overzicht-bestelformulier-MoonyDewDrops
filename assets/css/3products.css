@@ -135,3 +135,55 @@ Where everything is sorted into a grid just like the .container class
   .productButtons:hover{
     cursor: pointer;
   }
+
+  @media only screen and (max-width: 745px){
+    .products{      
+      grid-template-columns: 0.5fr 0.5fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-areas:
+        "product1 product2" /*1*/
+        "product3 product4"/*2*/
+        "product5 product6"/*3*/
+        "product7 product8"/*4*/
+        "product9 product10"/*5*/
+        "product11 product12"/*6*/
+        "product13 product14"/*7*/
+        "product15 product16"/*8*/
+        "product17 product18"/*9*/
+        "product19 product20"/*10*/
+        "product21 blank"/*11*/
+        "nextPage nextPage";/*12*/
+      }
+  }
+
+  @media only screen and (max-width: 450px){
+    .products{      
+
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-areas:
+        "product1"
+        "product2" /*1*/
+        "product3" 
+        "product4"/*2*/
+        "product5" 
+        "product6"/*3*/
+        "product7" 
+        "product8"/*4*/
+        "product9" 
+        "product10"/*5*/
+        "product11" 
+        "product12"/*6*/
+        "product13" 
+        "product14"/*7*/
+        "product15" 
+        "product16"/*8*/
+        "product17" 
+        "product18"/*9*/
+        "product19" 
+        "product20"/*10*/
+        "product21" /*11*/
+        "nextPage";/*12*/
+    }
+  
+  }
